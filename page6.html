@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="6">
+
+<div class="container">
+    <h2>Page 6</h2>
+    <div id="timer" class="timer">30</div>
+
+    <button id="continueBtn" onclick="next()">Continue</button>
+</div>
+
+<script src="protect.js"></script>
+<script>
+function next() {
+    sessionStorage.setItem("page6_done", "true");
+    window.location.href = "completed.html";
+}
+</script>
+
+</body>
+</html>
